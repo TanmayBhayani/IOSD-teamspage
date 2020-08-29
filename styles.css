@@ -1,0 +1,66 @@
+html,body {
+  box-sizing: border-box;
+  padding-top: 28px;
+}
+
+.jumbotron {
+  background-image: url('team.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron > h1 {
+  color: whitesmoke;
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.anime {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: green;
+}
+
+.card:hover .overlay {
+  opacity: 0.5;
+}
+.card .icon {
+  color: white;
+  font-size: 30px;
+  opacity: 1;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  list-style-type: none;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: black;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
