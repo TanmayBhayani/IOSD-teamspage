@@ -1,8 +1,14 @@
 html,body {
   box-sizing: border-box;
-  padding-top: 28px;
+  padding-top: 32px;
 }
-
+.navbar-brand {
+  color: greenyellow !important;
+  font-size: 150% !important;
+}
+.card {
+  margin: 0px;
+}
 .jumbotron {
   background-image: url('team.jpg');
   background-repeat: no-repeat;
@@ -34,11 +40,18 @@ html,body {
   width: 100%;
   opacity: 0;
   transition: .3s ease;
-  background-color: green;
+  background: rgb(203,238,106);
+  background: -moz-linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
+  background: linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbee6a",endColorstr="#55e8c5",GradientType=1);
+  overflow: hidden;
 }
-
+.title {
+  color: green;
+}
 .card:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .card .icon {
   color: white;
@@ -47,8 +60,7 @@ html,body {
 }
 .icons {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
