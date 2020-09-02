@@ -39,7 +39,7 @@ html,body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .3s ease;
+  transition: .7s ease;
   background: rgb(203,238,106);
   background: -moz-linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
@@ -53,26 +53,37 @@ html,body {
 .card:hover .overlay {
   opacity: 0.8;
 }
+.card:hover .icons {
+  transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
 .card .icon {
   color: white;
-  font-size: 30px;
+  font-size: 4vw;
   opacity: 1;
+  margin: 7%;
 }
 .icons {
   position: absolute;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  padding-left: 0px;
+  transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
   text-align: center;
   list-style-type: none;
+  transition: transform 2.7s ease-out 0.5;
 }
 
 .fa-user:hover {
   color: #eee;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .nav-link{ color: black;  }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .card .icon{ 
+    font-size: 2vw; 
+  }
 }
