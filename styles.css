@@ -6,25 +6,18 @@ html,body {
   color: greenyellow !important;
   font-size: 150% !important;
 }
-.card {
-  margin: 0px;
-}
 .jumbotron {
   background-image: url('team.jpg');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat cover;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
+  height: 80vh;
 }
 .jumbotron > h1 {
   color: whitesmoke;
-}
-.card img {
-  display: block;
-  width: 100%;
-  height: auto;
+  font-size: 500%;
 }
 .anime {
   position: relative;
@@ -47,7 +40,7 @@ html,body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbee6a",endColorstr="#55e8c5",GradientType=1);
   overflow: hidden;
 }
-.title {
+.card-subtitle {
   color: green;
 }
 .card:hover .overlay {
@@ -72,7 +65,7 @@ html,body {
   -webkit-transform: translateX(-100%);
   text-align: center;
   list-style-type: none;
-  transition: transform 2.7s ease-out 0.5;
+  transition: transform 0.7s ease-out 0.5;
 }
 
 .fa-user:hover {
