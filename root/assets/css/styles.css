@@ -6,7 +6,7 @@ html,body {
   font-size: 150% !important;
 }
 .jumbotron {
-  background-image: url('team.jpg');
+  background-image: url('../images/team.jpg');
   background-repeat: no-repeat cover;
   background-position: center;
   background-size: cover;
